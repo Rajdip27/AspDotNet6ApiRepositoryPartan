@@ -24,9 +24,19 @@ namespace _2ndApiTest6.Manager
            return GetFirstOrDefault(x=>x.Id== id);
         }
 
+        public ICollection<Post> GetPosts(int page, int pageSize)
+        {
+            if (page <= 1)
+            {
+                page = 0;
+            }
+            int totalNumber=page*pageSize;
+           return GetAll().Skip(totalNumber).Take(pageSize).ToList();   
+        }
+
         public ICollection<Post> SarchPost(string text)
         {
-            return Get(c=>c.Title.ToLower().Contains(text.ToLower()));
+            return Get(c=>c.Title.ToLower().Contains(text)||c.Decripation.ToLower().Contains(text));
             
 
         }

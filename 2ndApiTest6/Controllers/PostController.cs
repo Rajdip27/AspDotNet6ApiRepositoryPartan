@@ -90,6 +90,21 @@ namespace _2ndApiTest6.Controllers
             }
 
         }
+        [HttpGet]
+        public IActionResult GetPosts(int page = 1)
+        {
+            try
+            {
+                var posts = _postManager.GetPosts(page, 2);
+                return CustomResult("Paging data for page No : " + page, posts.ToList());
+
+            }
+            catch(Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+
+            }
+        }
         [HttpGet("id")]
         public IActionResult GetByID(int id)
         {

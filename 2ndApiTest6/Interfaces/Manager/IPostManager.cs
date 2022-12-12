@@ -8,6 +8,7 @@ namespace _2ndApiTest6.Interfaces.Manager
         Post GetById(int id);
         ICollection<Post> GetAll(string title);
         ICollection<Post> SarchPost(string text);
+        ICollection<Post> GetPosts(int page, int pageSize);
         
 
     }
