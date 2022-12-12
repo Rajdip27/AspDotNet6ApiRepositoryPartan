@@ -13,5 +13,22 @@ namespace _2ndApiTest6.Manager
         public PostManager(ApplicationDbContext dbContext) : base(new PostRepository(dbContext))
         {
         }
+
+        public ICollection<Post> GetAll(string title)
+        {
+            return Get(c => c.Title.ToLower() == title.ToLower());
+        }
+
+        public Post GetById(int id)
+        {
+           return GetFirstOrDefault(x=>x.Id== id);
+        }
+
+        public ICollection<Post> SarchPost(string text)
+        {
+            return Get(c=>c.Title.ToLower().Contains(text.ToLower()));
+            
+
+        }
     }
 }
