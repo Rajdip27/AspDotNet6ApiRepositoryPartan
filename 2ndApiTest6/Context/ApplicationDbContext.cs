@@ -1,0 +1,15 @@
+﻿using _2ndApiTest6.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+
+namespace _2ndApiTest6.Context
+{
+    public class ApplicationDbContext:DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
+        {
+
+        }
+        public DbSet<Post> posts { get; set; }
+    }
+}
