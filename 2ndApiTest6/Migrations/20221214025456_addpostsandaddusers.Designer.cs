@@ -12,8 +12,8 @@ using _2ndApiTest6.Context;
 namespace _2ndApiTest6.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221212063456_addpost")]
-    partial class addpost
+    [Migration("20221214025456_addpostsandaddusers")]
+    partial class addpostsandaddusers
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,6 +47,30 @@ namespace _2ndApiTest6.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("posts");
+                });
+
+            modelBuilder.Entity("_2ndApiTest6.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("users");
                 });
 #pragma warning restore 612, 618
         }

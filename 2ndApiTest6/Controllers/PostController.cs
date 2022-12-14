@@ -39,6 +39,7 @@ namespace _2ndApiTest6.Controllers
             }
             catch(Exception ex)
             {
+                //return CustomResult(ex.Message, HttpStatusCode.BadRequest);
                 return CustomResult(ex.Message, HttpStatusCode.BadRequest);
             }
            

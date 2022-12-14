@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace _2ndApiTest6.Migrations
 {
     /// <inheritdoc />
-    public partial class addpost : Migration
+    public partial class addpostsandaddusers : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -25,6 +25,21 @@ namespace _2ndApiTest6.Migrations
                 {
                     table.PrimaryKey("PK_posts", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Age = table.Column<int>(type: "int", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_users", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -32,6 +47,9 @@ namespace _2ndApiTest6.Migrations
         {
             migrationBuilder.DropTable(
                 name: "posts");
+
+            migrationBuilder.DropTable(
+                name: "users");
         }
     }
 }
