@@ -36,6 +36,7 @@ namespace _2ndApiTest6.Controllers
             }
 
         }
+        
         [HttpGet("id")]
         public IActionResult GetById(int id)
         {
