@@ -13,5 +13,6 @@ namespace _2ndApiTest6.Context
         public DbSet<Post> posts { get; set; }
         public DbSet<User> users { get; set; }
         public DbSet<Product> products { get; set; }
+        public DbSet<Customer> customers { get; set; }   
     }
 }
