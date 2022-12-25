@@ -4577,11 +4577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Api\\2ndApiTest6\\2ndApiTest6\\2ndApiTest6.csproj",
+      "projectUniqueName": "C:\\Users\\Santnu\\Source\\Repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
       "projectName": "2ndApiTest6",
-      "projectPath": "E:\\Api\\2ndApiTest6\\2ndApiTest6\\2ndApiTest6.csproj",
+      "projectPath": "C:\\Users\\Santnu\\Source\\Repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
       "packagesPath": "C:\\Users\\Santnu\\.nuget\\packages\\",
-      "outputPath": "E:\\Api\\2ndApiTest6\\2ndApiTest6\\obj\\",
+      "outputPath": "C:\\Users\\Santnu\\Source\\Repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
