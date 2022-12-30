@@ -15,6 +15,7 @@ namespace _2ndApiTest6.Context
         public DbSet<Product> products { get; set; }
         public DbSet<Customer> customers { get; set; }  
         public DbSet<Student> students { get; set; }
+        public DbSet<ImageUpload> images { get; set; }
        
     }
 }
