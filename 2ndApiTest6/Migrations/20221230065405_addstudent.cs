@@ -5,7 +5,7 @@
 namespace _2ndApiTest6.Migrations
 {
     /// <inheritdoc />
-    public partial class addStudent : Migration
+    public partial class addstudent : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

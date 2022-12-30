@@ -3,7 +3,8 @@ using EF.Core.Repository.Interface.Manager;
 
 namespace _2ndApiTest6.Interfaces.Manager
 {
-    public interface IstudentManager:ICommonManager<Student>
+    public interface IStudentManager:ICommonManager<Student>
     {
+        Student GetById(int id);
     }
 }

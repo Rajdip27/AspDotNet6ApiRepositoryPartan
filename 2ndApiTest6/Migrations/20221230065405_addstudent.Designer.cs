@@ -12,8 +12,8 @@ using _2ndApiTest6.Context;
 namespace _2ndApiTest6.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221225185753_addStudent")]
-    partial class addStudent
+    [Migration("20221230065405_addstudent")]
+    partial class addstudent
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Santnu\\source\\repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj": {}
+    "C:\\Users\\Santnu\\Desktop\\New folder (7)\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Santnu\\source\\repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj": {
+    "C:\\Users\\Santnu\\Desktop\\New folder (7)\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Santnu\\source\\repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
+        "projectUniqueName": "C:\\Users\\Santnu\\Desktop\\New folder (7)\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
         "projectName": "2ndApiTest6",
-        "projectPath": "C:\\Users\\Santnu\\source\\repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
+        "projectPath": "C:\\Users\\Santnu\\Desktop\\New folder (7)\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\2ndApiTest6.csproj",
         "packagesPath": "C:\\Users\\Santnu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Santnu\\source\\repos\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\obj\\",
+        "outputPath": "C:\\Users\\Santnu\\Desktop\\New folder (7)\\AspDotNet6ApiRepositoryPartan\\2ndApiTest6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -53,7 +53,7 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.7, )"
+              "version": "[6.0.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
