@@ -79,5 +79,52 @@ namespace _2ndApiTest6.Controllers
             }
 
         }
+
+        [HttpPost]
+        public async Task<IActionResult> StudentEdit(Student student)
+        {
+            try
+            {
+                if(student == null)
+                {
+                    return CustomResult("Student Is Missing", HttpStatusCode.NotFound);
+
+                }
+                bool IsUpdate=_studentManager.Update(student);
+                if (IsUpdate)
+                {
+                    return CustomResult("Student Update Successfully",IsUpdate);
+
+                }
+                return CustomResult("Student Update Failed", HttpStatusCode.BadRequest);
+
+            }catch(Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+            }
+        }
+        [HttpDelete("id")]
+        public async Task<IActionResult> StudentDelete(int id)
+        {
+            try
+            {
+                var Result = _studentManager.GetById(id);
+                if (Result == null)
+                {
+                    return CustomResult("Data Not Found",HttpStatusCode.NotFound);
+                }
+                bool IsDelete=_studentManager.Delete(Result);
+                if (IsDelete)
+                {
+                    return CustomResult("Delete Has been Successfull",IsDelete);
+                }
+                return CustomResult("Student Delete Failed", HttpStatusCode.BadRequest);
+
+            }catch(Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+            }
+
+        }
     }
 }
