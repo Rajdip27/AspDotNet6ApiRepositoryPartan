@@ -51,6 +51,24 @@ namespace _2ndApiTest6.Controllers
                 return CustomResult(ex.Message, HttpStatusCode.BadRequest);
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetByUserName(string uName)
+        {
+            try
+            {
+                var Result=_userManager.GetById(uName);
+                if (Result == null)
+                {
+                    return CustomResult("User Name is Messing",HttpStatusCode.NotFound);
+
+                }
+                return CustomResult("Data is Found",Result.ToString());
+
+            }catch(Exception ex)
+            {
+                return CustomResult(ex.Message, HttpStatusCode.BadRequest);
+            }
+        }
 
 
 

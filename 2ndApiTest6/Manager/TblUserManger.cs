@@ -15,5 +15,10 @@ namespace _2ndApiTest6.Manager
 
 
         }
+
+        public TblUser GetById(string UserName)
+        {
+            return GetFirstOrDefault(o=>o.Userid== UserName);
+        }
     }
 }

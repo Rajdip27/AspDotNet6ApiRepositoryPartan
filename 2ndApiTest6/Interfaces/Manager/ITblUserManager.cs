@@ -5,5 +5,6 @@ namespace _2ndApiTest6.Interfaces.Manager
 {
     public interface ITblUserManager:ICommonManager<TblUser>
     {
+        TblUser GetById(string UserName);    
     }
 }
