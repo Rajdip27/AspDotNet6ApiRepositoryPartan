@@ -17,6 +17,7 @@ namespace _2ndApiTest6.Context
         public DbSet<Student> students { get; set; }
         public DbSet<ImageUpload> images { get; set; }
         public DbSet<TblUser> tblUsers { get; set; }
+        public DbSet<ShowProducts> showProducts { get; set; }
        
     }
 }
