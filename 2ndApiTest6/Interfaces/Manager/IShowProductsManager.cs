@@ -5,5 +5,8 @@ namespace _2ndApiTest6.Interfaces.Manager
 {
     public interface IShowProductsManager:ICommonManager<ShowProducts>
     {
+        ShowProducts GetById(int id);
+        ICollection<ShowProducts> Pagging( int page,int pageSize);
+
     }
 }

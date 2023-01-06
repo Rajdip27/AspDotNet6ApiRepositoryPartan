@@ -12,5 +12,20 @@ namespace _2ndApiTest6.Manager
         public ShowProductsManager(ApplicationDbContext dbContext) : base(new ShowProductsRepository(dbContext))
         {
         }
+
+        public ShowProducts GetById(int id)
+        {
+            return GetFirstOrDefault(x => x.Id == id);
+        }
+
+        public ICollection<ShowProducts> Pagging(int page, int pageSize)
+        {
+            if (page <= 1)
+            {
+                page = 0;
+            }
+            int Total = page * pageSize;
+            return GetAll().Skip(Total).Take(pageSize).ToList();
+        }
     }
 }
